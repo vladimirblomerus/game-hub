@@ -1,4 +1,4 @@
-const getCroppedImageUrl = (url: string) => {
+const getCroppedImageUrl = (url: string, dimensions?: {width?: number, height?: number}) => {
     const target = "media/";
     const imageWidth = 600;
     const imageHeight = 400;
