@@ -19,7 +19,7 @@ const PlatformSelector = ({ selectedPlatform, onSelectPlatform }: Props) => {
         {selectedPlatform ? "Platform: " + selectedPlatform?.name : "Platforms"}
       </MenuButton>
       <MenuList onChange={(value) => console.log(value)}>
-        {data.map((platform) => (
+        {data.results.map((platform) => (
           <MenuItem
             key={platform.id}
             bgColor={platform.id === selectedPlatform?.id ? "gray.200" : ""}
